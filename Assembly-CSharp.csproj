@@ -65,6 +65,8 @@
     <Compile Include="Assets\Samples\Input System\1.0.1\Custom Binding Composite\CustomComposite.cs" />
     <Compile Include="Assets\Samples\Input System\1.0.1\Custom Device Usages\CustomDeviceUsages.cs" />
     <Compile Include="Assets\Samples\Input System\1.0.1\Custom Device\CustomDevice.cs" />
+    <Compile Include="Assets\Scripts\IP Locating\Country.cs" />
+    <Compile Include="Assets\Scripts\IP Locating\Locating.cs" />
     <Compile Include="Assets\Scripts\Sensor Manager\GPS.cs" />
     <Compile Include="Assets\Scripts\Sensor Manager\Pedometer.cs" />
     <Compile Include="Assets\Scripts\Sensor Manager\SensorManager.cs" />
