@@ -47,6 +47,6 @@ public class SensorManager : MonoBehaviour
         indoorDemo = jumpCount * 100;
         sleepDemo = sleepTimer * 100 / 3600; //转化为小时
 
-        Debug.Log("Steps Counter" + stepsCount); //Debug Information
+        //Debug.Log("Steps Counter" + stepsCount); //Debug Information
     }
 }

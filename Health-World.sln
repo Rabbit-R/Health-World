@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSystem.Samples.Visualizers", "InputSystem.Samples.Visualizers.csproj", "{97896d7f-b60e-68f7-debc-b95b3d0861be}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{d414199c-b030-a328-a6ac-b6c14a6813dc}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InputSystem.RebindingUI", "Unity.InputSystem.RebindingUI.csproj", "{979cb949-2407-647e-9af7-e7fd37098ce0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InputSystem.Recorder", "Unity.InputSystem.Recorder.csproj", "{f6f8818b-bd4a-881d-e7ec-850330bf6a06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InputSystem.InGameHints", "Unity.InputSystem.InGameHints.csproj", "{e89bb90f-ee5d-f3ff-13ab-e77cce18e08c}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97896d7f-b60e-68f7-debc-b95b3d0861be}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97896d7f-b60e-68f7-debc-b95b3d0861be}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d414199c-b030-a328-a6ac-b6c14a6813dc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d414199c-b030-a328-a6ac-b6c14a6813dc}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979cb949-2407-647e-9af7-e7fd37098ce0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979cb949-2407-647e-9af7-e7fd37098ce0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f6f8818b-bd4a-881d-e7ec-850330bf6a06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f6f8818b-bd4a-881d-e7ec-850330bf6a06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e89bb90f-ee5d-f3ff-13ab-e77cce18e08c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e89bb90f-ee5d-f3ff-13ab-e77cce18e08c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
