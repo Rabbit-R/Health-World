@@ -29,22 +29,30 @@ public class Pedometer : MonoBehaviour
     private bool isJumping = false;
 
     private int hour; //time now
+    private int day; //date today
+    private int dateChecker; // date checker
+
     private float lastTime = 0; // sleep time counter
     private float curTime; //sleep time counter
     public static float sleepTimer = 0; //  length of one's sleep
-
-    
+    private bool sleepFlag;
+   
 
     void Awake()
     {
         accelerationAverage = Input.acceleration.magnitude;
         oldSteps = steps;
         oldjumpCount = jumpCount;
+
+        day = DateTime.Now.Day; //  date when start the app
     }
 
     void Update()
     {
+        
+
         checkWalkingAndJumping(); // 检测是否行走
+        checkDate(); // 检测是否过了24小时，用来清理stepcounter和jumpcounter
 
         curTime = Time.time;
         if (lastTime == 0)
@@ -55,6 +63,7 @@ public class Pedometer : MonoBehaviour
         if (isWalking)
         {
             lastTime = Time.time;
+            sleepFlag = false;
 
             statusText.text = ("状态:行走");
             //Debug.Log("行走");
@@ -63,12 +72,18 @@ public class Pedometer : MonoBehaviour
         else if (!isWalking)
         {
             //if the time is after 22.pm and before 10.am, 
-            //and the mobile phone is static for more than 30 mins, 
+            //and the mobile phone is static for more than 30 mins (1800 seconds), 
             //the output is !0;
             hour = DateTime.Now.Hour;
             if ( (hour >= 22 || hour <=10) && (curTime - lastTime) > 1800)
             {
                 sleepTimer = curTime - lastTime;
+                sleepFlag = true;
+            }
+
+            // reset sleepTimer
+            if(sleepFlag == false) {
+                sleepTimer = 0; 
             }
             
             statusText.text = ("状态:不动");
@@ -108,16 +123,29 @@ public class Pedometer : MonoBehaviour
             }
 
             //Debug.Log("步数: " + steps + "\n跳跃数：" + jumpCount);
-
-            
         }
         else
         {
             if (delta < lowLimit)//往低
             {
-
                 isHigh = false;
             }
+        }
+    }
+    
+
+    //Check the date
+    //if time passed 24:00 today
+    //reset stepcounter, jumpcounter
+    private void checkDate()
+    {
+        dateChecker = DateTime.Now.Day;
+        if (dateChecker != day) {
+            steps = 0;
+            jumpCount = 0;
+            oldSteps = steps;
+            oldjumpCount = jumpCount;
+
         }
     }
 

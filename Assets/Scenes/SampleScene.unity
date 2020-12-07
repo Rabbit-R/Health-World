@@ -630,6 +630,8 @@ GameObject:
   - component: {fileID: 2025145658}
   - component: {fileID: 2025145657}
   - component: {fileID: 2025145656}
+  - component: {fileID: 2025145660}
+  - component: {fileID: 2025145661}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -711,3 +713,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2025145660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025145655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6668bea7b599864fb51f07ebd639bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2025145661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025145655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8426972546ec9554ca34339090467fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusText: {fileID: 664607017}
+  stepsText: {fileID: 849649841}
+  lowLimit: 0.005
+  highLimit: 0.1
+  vertHighLimit: 0.25
