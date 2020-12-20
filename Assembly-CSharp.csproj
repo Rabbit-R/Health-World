@@ -43,6 +43,10 @@
      <Compile Include="Assets\Scripts\Advise Manager\HealthEnergy.cs" />
      <Compile Include="Assets\Scripts\IP Locating\Country.cs" />
      <Compile Include="Assets\Scripts\IP Locating\Locating.cs" />
+     <Compile Include="Assets\Scripts\Network\Post.cs" />
+     <Compile Include="Assets\Scripts\Network\Request.cs" />
+     <Compile Include="Assets\Scripts\Network\net.cs" />
+     <Compile Include="Assets\Scripts\Sensor Manager\AudioData.cs" />
      <Compile Include="Assets\Scripts\Sensor Manager\GPS.cs" />
      <Compile Include="Assets\Scripts\Sensor Manager\Pedometer.cs" />
      <Compile Include="Assets\Scripts\Sensor Manager\SensorManager.cs" />
